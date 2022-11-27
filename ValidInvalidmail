@@ -1,0 +1,36 @@
+test_str = input("e mail :" )
+
+
+print(" e-mail  : " + test_str)
+length = len(test_str)
+ 
+
+  
+
+def ValidInvalid():
+    for i in range (length):
+        if(test_str.find(" ")!=-1):
+            print('invalid')
+        elif(test_str[0] == '@'  ):  
+          print('invalid')
+          
+        
+
+        elif(test_str[i]== '.'):
+          if((test_str[i+1]=='c' and test_str[i+2] == 'o' and test_str[i+3] == 'm') or
+
+         (test_str[i+1]=='c' and test_str[i+2] == 'o' and test_str[i+3] == 'm' and test_str[i+4] == '.' and test_str[i+5]=='t'and test_str[i+6]=='r' ) or
+
+           (test_str[i+1]=='e' and test_str[i+2] == 'd' and test_str[i+3] == 'u' and test_str[i+4] == '.' and test_str[i+5]=='t'and test_str[i+6]=='r')):
+             
+            
+            print('valid')
+ 
+ValidInvalid()
+
+  
+
+           
+         
+  
+
